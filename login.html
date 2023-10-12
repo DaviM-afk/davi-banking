@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form id="form-deposito">
+            <input type="email" required placeholder="Email" />
+            <input type="password" required placeholder="Senha" />
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+</body>
+<script>
+    const form = document.getElementById('form-deposito')
+
+    form.addEventListener('submit', function (event) {
+
+        event.preventDefault()
+
+        alert('Logado com sucesso!')
+
+        window.location = "index.html"
+    })
+</script>
+
+</html>
